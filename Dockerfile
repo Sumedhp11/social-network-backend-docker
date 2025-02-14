@@ -14,10 +14,6 @@ RUN npm install
 
 # Copy the entire source code
 COPY . .
-
-COPY .env .env
-
-
 # Generate Prisma client and apply migrations
 RUN npx prisma generate
 
